@@ -1,0 +1,13 @@
+; $Id$
+ 
+name = TellerLib
+description = hulpcode om teller-pagina's te maken voor campagnes
+package = sprbs
+core = 7.x
+
+dependencies[] = civicrm
+
+stylesheets[all][] = tellerlib.css
+
+files[] = tellerlib-detail.inc
+files[] = tellerlib-overzicht.inc
