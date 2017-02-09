@@ -60,7 +60,7 @@ function tellerlib_overzicht($config) {
     1 => array($config->groupID, 'Integer'),
   );
 
-  $html .= '<h2>Per afdeling</h2>';
+  $html .= '<h2>Per SP afdeling</h2>';
   $html .= '<ul>';
 
   $dao = CRM_Core_DAO::executeQuery($sql, $sqlParams);
