@@ -5,7 +5,7 @@ function tellerlib_overzicht($config) {
   civicrm_initialize();
 
   $html = '<main class="content">';
-  $html .= "<p>{$config->overviewPageTitle}</p>";
+  $html .= "<p>Aantal aanmeldingen</p>";
 
   // 1. count the total number of supporters
   $sql = "
@@ -60,7 +60,7 @@ function tellerlib_overzicht($config) {
     1 => array($config->groupID, 'Integer'),
   );
 
-  $html .= '<h2>Afdeling</h2>';
+  $html .= '<h2>Per afdeling</h2>';
   $html .= '<ul>';
 
   $dao = CRM_Core_DAO::executeQuery($sql, $sqlParams);
