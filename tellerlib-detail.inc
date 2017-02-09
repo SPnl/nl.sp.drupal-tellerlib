@@ -83,7 +83,7 @@ function tellerlib_detail_getData($config, $filterProvincie, $filterGemeente, $f
 
     $sql = "
         SELECT
-          ag.`provincie_28` item
+          ifnull(ag.`provincie_28`, '(niet ingevuld') item
           , COUNT(gc.id) aantal
         FROM         
       	  civicrm_value_adresgegevens_12 ag
@@ -111,7 +111,7 @@ function tellerlib_detail_getData($config, $filterProvincie, $filterGemeente, $f
 
     $sql = "
         SELECT
-          ag.`gemeente_24` item
+          ifnull(ag.`gemeente_24`, '(niet ingevuld)') item
           , COUNT(gc.id) aantal
         FROM         
       	  civicrm_value_adresgegevens_12 ag
@@ -142,7 +142,7 @@ function tellerlib_detail_getData($config, $filterProvincie, $filterGemeente, $f
 
     $sql = "
         SELECT
-          a.city item
+          ifnull(a.city, '(niet ingevuld)') item
           , COUNT(gc.id) aantal
         FROM         
       	  civicrm_value_adresgegevens_12 ag
@@ -176,7 +176,7 @@ function tellerlib_detail_getData($config, $filterProvincie, $filterGemeente, $f
 
     $sql = "
         SELECT
-          ag.buurt_25 item
+          ifnull(ag.buurt_25, '(niet ingevuld)') item
           , COUNT(gc.id) aantal
         FROM         
       	  civicrm_value_adresgegevens_12 ag
