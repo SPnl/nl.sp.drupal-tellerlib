@@ -43,14 +43,14 @@ function tellerlib_detail($config) {
     $html .= '<tr>';
 
     if ($data['drillDownURL']) {
-      $html .= '<td class="telletitem"><a href="' . $data['drillDownURL'] . urlencode($data['dao']->item) . '">' . $data['dao']->item . '</a></td>';
+      $html .= '<td class="telleritem"><a href="' . $data['drillDownURL'] . urlencode($data['dao']->item) . '">' . $data['dao']->item . '</a></td>';
     }
     else {
       // no drill down on item
-      $html .= "<td class=\"telletitem\">{$data['dao']->item}</td>";
+      $html .= "<td class=\"telleritem\">{$data['dao']->item}</td>";
     }
 
-    $html .= "<td class=\"tellevalue\">{$data['dao']->aantal}</td>";
+    $html .= "<td class=\"tellervalue\">{$data['dao']->aantal}</td>";
     $html .= '</tr>';
   }
 
