@@ -83,7 +83,7 @@ function tellerlib_detail_getData($config, $filterProvincie, $filterGemeente, $f
 
     $sql = "
         SELECT
-          ifnull(ag.`provincie_28`, '(niet ingevuld') item
+          ifnull(ag.`provincie_28`, '(niet ingevuld)') item
           , COUNT(gc.id) aantal
         FROM         
       	  civicrm_value_adresgegevens_12 ag
