@@ -1,7 +1,6 @@
 {
   "name": "SPnl/nl.sp.drupal-tellerlib",
   "description": "Hulpcode om teller-pagina's te maken voor campagnes",
-  "version": "1.0.0",
   "type": "drupal-module",
   "authors": [
     {
