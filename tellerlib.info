@@ -3,6 +3,7 @@
 name = TellerLib
 description = hulpcode om teller-pagina's te maken voor campagnes
 package = sprbs
+version = 1.0.1
 core = 7.x
 
 dependencies[] = civicrm

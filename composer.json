@@ -1,7 +1,7 @@
 {
-  "name": "SPnl/nl.sp.drupal-tellerlib",
+  "name": "spnl/nl.sp.drupal-tellerlib",
   "description": "Hulpcode om teller-pagina's te maken voor campagnes",
-  "type": "drupal-module",
+  "type": "drupal-custom-module",
   "authors": [
     {
       "name": "Alain Benbassat",
